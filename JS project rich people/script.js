@@ -44,6 +44,7 @@ function renderPage(richPeoples) {
 
   for (let richPeople of richPeoples) {
     const str = createCard(richPeople);
+    html += str;
   }
 
   cardsContainer.innerHTML = html;
