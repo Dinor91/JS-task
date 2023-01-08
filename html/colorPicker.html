@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/colorPicker.js"></script>
+    <link rel="stylesheet" href="/css/colorPicker/style.css" />
+  </head>
+  <body>
+    <h1 class="display-5" style="margin: 50px">Insert your RGB</h1>
+    <div style="height: 80vh" class="col-6 m-auto container overflow-auto">
+      <div style="width: 200px" class="col-6 m-auto">
+        <form id="color-form">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="red-inputGroup-sizing-default"
+              >Red</span
+            >
+            <input
+              id="red"
+              type="number"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+          <br />
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >Green</span
+            >
+            <input
+              id="green"
+              type="number"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+          <br />
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >Blue</span
+            >
+            <input
+              id="blue"
+              type="number"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+          <button type="button" class="btn btn-primary" id="update-button">
+            Update Color
+          </button>
+        </form>
+      </div>
+      <br />
+      <p class="h6">your result:</p>
+      <div id="color-result"></div>
+      <br />
+      <div class="card col-6 m-auto" style="width: 18rem">
+        <div class="card-header"><p class="h6">Previous results:</p></div>
+        <ul class="list-group list-group-flush" id="prev-color-result"></ul>
+      </div>
+      <br />
+      <a
+        style="text-decoration: none"
+        class="text-danger my-5 fs-4"
+        href="/index.hompage.html"
+        >backToHomePage</a
+      >
+    </div>
+    <div class="card col-6 m-auto" style="width: 18rem">
+      <div class="card-header"><p class="h6">Previous results:</p></div>
+      <ul class="list-group list-group-flush" id="prev-color-result"></ul>
+    </div>
+  </body>
+</html>

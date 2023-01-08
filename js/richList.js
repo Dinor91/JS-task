@@ -1,4 +1,4 @@
-let richPeoples = [
+let richArr = [
   {
     id: "bill-gates",
     name: "Bill Gates",
